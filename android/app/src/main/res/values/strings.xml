@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">chromatic-shift</string>
+    <string name="title_activity_main">chromatic-shift</string>
+    <string name="package_name">com.chromaticshift.app</string>
+    <string name="custom_url_scheme">com.chromaticshift.app</string>
+</resources>
