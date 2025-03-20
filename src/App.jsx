@@ -33,7 +33,7 @@ const ChromaticShift = () => {
   ];
   const COLOR_NAMES = ["red", "blue", "yellow", "green", "purple", "orange"];
 
-  // Game state (No changes needed)
+  // Game state
   const [level, setLevel] = useState(1);
   const [moves, setMoves] = useState(0);
   const [gridSize, setGridSize] = useState(4);
@@ -44,14 +44,19 @@ const ChromaticShift = () => {
   const [showTarget, setShowTarget] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [colors, setColors] = useState(BASE_COLORS.slice(0, 3));
+  const [showLevelPicker, setShowLevelPicker] = useState(false);
+  const [completedLevels, setCompletedLevels] = useState({}); // New state to track completed levels
+  const [hasNextLevel, setHasNextLevel] = useState(true); // New state to track completed levels
 
-  // Load level on app start (No changes needed)
+  // Load level and completed levels on app start
   useEffect(() => {
-    const loadLevel = async () => {
+    const loadData = async () => {
       const savedLevel = await getLevel();
       setLevel(savedLevel);
+      const savedCompletedLevels = await getCompletedLevels();
+      setCompletedLevels(savedCompletedLevels);
     };
-    loadLevel();
+    loadData();
   }, []);
 
   // Initialize game
@@ -59,12 +64,16 @@ const ChromaticShift = () => {
     initializeGame();
   }, [level]);
 
-  // Save level whenever it changes (No changes needed)
+  // Save level and completed levels whenever they change
   useEffect(() => {
     storeLevel(level);
   }, [level]);
 
-  // Check if the current grid matches the target (No changes needed)
+  useEffect(() => {
+    storeCompletedLevels(completedLevels);
+  }, [completedLevels]);
+
+  // Check if the current grid matches the target
   useEffect(() => {
     if (grid.length > 0 && targetGrid.length > 0) {
       const matches = grid.every((row, rowIndex) =>
@@ -74,11 +83,16 @@ const ChromaticShift = () => {
       if (matches && !isComplete && moves > 0) {
         setIsComplete(true);
         setIsModalOpen(true);
+        // Mark the level as completed
+        setCompletedLevels((prevCompletedLevels) => ({
+          ...prevCompletedLevels,
+          [level]: true,
+        }));
       }
     }
-  }, [grid, targetGrid]);
+  }, [grid, targetGrid, level, moves]);
 
-  // --- Capacitor Preferences Functions --- (No changes needed)
+  // --- Capacitor Preferences Functions ---
   const storeLevel = async (value) => {
     try {
       await Preferences.set({
@@ -101,6 +115,29 @@ const ChromaticShift = () => {
     }
     return 1;
   };
+
+  const storeCompletedLevels = async (value) => {
+    try {
+      await Preferences.set({
+        key: "completedLevels",
+        value: JSON.stringify(value),
+      });
+    } catch (e) {
+      console.error("Error storing completed levels:", e);
+    }
+  };
+
+  const getCompletedLevels = async () => {
+    try {
+      const { value } = await Preferences.get({ key: "completedLevels" });
+      if (value !== null) {
+        return JSON.parse(value);
+      }
+    } catch (e) {
+      console.error("Error getting completed levels:", e);
+    }
+    return {};
+  };
   // --- End Capacitor Preferences Functions ---
 
   // Initialize game with premade levels
@@ -114,8 +151,45 @@ const ChromaticShift = () => {
       setTargetGrid(currentLevelData.targetGrid);
       setMoves(0);
       setIsComplete(false);
+    } else if (level > 50) {
+      // Random generation for levels beyond 50
+      setHasNextLevel(true);
+      const newSize = 6; // Fixed grid size for random levels
+      const numColors = 6; // Fixed number of colors for random levels
+      const newColors = BASE_COLORS.slice(0, numColors);
+
+      const newGrid = Array(newSize)
+        .fill()
+        .map(() =>
+          Array(newSize)
+            .fill()
+            .map(() => newColors[Math.floor(Math.random() * newColors.length)])
+        );
+
+      setGrid(newGrid);
+
+      const randomShifts = 10; // Increased shifts for random levels
+      let targetGrid = JSON.parse(JSON.stringify(newGrid));
+
+      for (let i = 0; i < randomShifts; i++) {
+        const isRow = Math.random() > 0.5;
+        const index = Math.floor(Math.random() * newSize);
+
+        if (isRow) {
+          targetGrid = shiftRow(targetGrid, index, newColors);
+        } else {
+          targetGrid = shiftColumn(targetGrid, index, newColors);
+        }
+      }
+
+      setTargetGrid(targetGrid);
+      setGridSize(newSize);
+      setColors(newColors);
+      setMoves(0);
+      setIsComplete(false);
     } else {
       console.error(`Level data not found for level ${level}`);
+      setHasNextLevel(false);
       // Optionally, you could fall back to random generation here if a level is missing.
     }
   };
@@ -156,13 +230,13 @@ const ChromaticShift = () => {
     setMoves(moves + 1);
   };
 
-  // Start next level (No changes needed)
+  // Start next level
   const nextLevel = () => {
     setLevel(level + 1);
     setIsModalOpen(false);
   };
 
-  // Reset current level (No changes needed)
+  // Reset current level
   const resetLevel = () => {
     initializeGame();
     setIsModalOpen(false);
@@ -180,28 +254,80 @@ const ChromaticShift = () => {
 
   const cellSize = getCellSize();
 
-  // Rest of the JSX (No changes needed)
+  // Function to handle level selection
+  const handleLevelSelect = (selectedLevel) => {
+    setLevel(selectedLevel);
+    setShowLevelPicker(false); // Close the level picker after selection
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-4 flex flex-col overflow-y-auto flex-grow flex-shrink">
         {/* Game Header */}
         <div className="flex justify-between items-center mb-2">
           <h1 className="text-2xl font-bold text-gray-800">Chromatic Shift</h1>
-          <div className="space-x-2">
+          <div className="space-x-2 flex flex-row">
             <button
               onClick={() => setShowHelp(!showHelp)}
               className="p-2 rounded-md bg-purple-200 hover:bg-purple-300 "
             >
               ?
             </button>
-            <button
+            {/* <button
               onClick={() => setShowTarget(!showTarget)}
               className="p-2 rounded-md bg-purple-200 hover:bg-purple-300"
             >
               {showTarget ? "Hide Target" : "Show Target"}
+            </button> */}
+            {/* Level Picker Button */}
+            <button
+              onClick={() => setShowLevelPicker(!showLevelPicker)}
+              className="p-2 rounded-md bg-purple-200 hover:bg-purple-300"
+            >
+              Levels
             </button>
           </div>
         </div>
+
+        {/* Level Picker */}
+        {showLevelPicker && (
+          <div className="mb-4 p-2 bg-gray-100 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">Select a Level:</h3>
+            <div className="grid grid-cols-5 gap-2">
+              {levelsData.map((lvl) => (
+                <button
+                  key={lvl.level}
+                  onClick={() => handleLevelSelect(lvl.level)}
+                  className={`px-3 py-1 rounded flex items-center justify-center ${
+                    lvl.level === level
+                      ? "bg-blue-500 text-white"
+                      : "bg-gray-200 hover:bg-gray-300"
+                  }`}
+                >
+                  {lvl.level}
+                  {completedLevels[lvl.level] && (
+                    <span className="ml-1 text-green-500">✓</span>
+                  )}
+                </button>
+              ))}
+              {/* Star for random levels */}
+              <button
+                key="random"
+                onClick={() => handleLevelSelect(51)}
+                className={`px-3 py-1 rounded flex items-center justify-center ${
+                  level > 50
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 hover:bg-gray-300"
+                }`}
+              >
+                <span className="text-yellow-400">★</span>
+                {completedLevels[51] && (
+                  <span className="ml-1 text-green-500">✓</span>
+                )}
+              </button>
+            </div>
+          </div>
+        )}
 
         {/* Help Modal */}
         {showHelp && (
@@ -231,7 +357,7 @@ const ChromaticShift = () => {
         </div>
 
         {/* Main Game Grid */}
-        <div className="mb-6">
+        <div className="mb-6 flex justify-center">
           {/* Game Grid */}
           <div className="flex">
             {/* Row Shift Controls */}
@@ -344,7 +470,12 @@ const ChromaticShift = () => {
             </button>
             <button
               onClick={nextLevel}
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              disabled={!hasNextLevel}
+              className={`px-4 py-2 rounded ${
+                !hasNextLevel
+                  ? "bg-gray-200 text-gray-400"
+                  : "bg-blue-500 text-white hover:bg-blue-600"
+              }`}
             >
               Skip
             </button>
@@ -358,7 +489,7 @@ const ChromaticShift = () => {
           <div key={color} className="flex items-center">
             <div className={`${color} w-4 h-4 rounded mr-1`}></div>
             <span className="text-sm">
-              {COLOR_NAMES[BASE_COLORS.indexOf(color)]}
+              {/* {COLOR_NAMES[BASE_COLORS.indexOf(color)]} */}
             </span>
           </div>
         ))}
@@ -369,7 +500,13 @@ const ChromaticShift = () => {
         <h3 className="font-bold text-lg text-green-800">Level Complete!</h3>
         <p className="text-green-700">You solved it in {moves} moves</p>
         <button
-          onClick={nextLevel}
+          onClick={() => {
+            nextLevel();
+            setCompletedLevels((prevCompletedLevels) => ({
+              ...prevCompletedLevels,
+              [level]: true,
+            }));
+          }}
           className="mt-3 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
         >
           Next Level
