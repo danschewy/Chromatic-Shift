@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Preferences } from "@capacitor/preferences";
+import levelsData from "./levels.json"; // Import the levels data
 
-// Modal Component
+// Modal Component (No changes needed)
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
@@ -21,11 +22,18 @@ const Modal = ({ isOpen, onClose, children }) => {
 };
 
 const ChromaticShift = () => {
-  // Game colors
-  const COLORS = ["bg-red-500", "bg-blue-500", "bg-yellow-400"];
-  const COLOR_NAMES = ["red", "blue", "yellow"];
+  // Game colors - expanded color palette (No changes needed)
+  const BASE_COLORS = [
+    "bg-red-500",
+    "bg-blue-500",
+    "bg-yellow-400",
+    "bg-green-500",
+    "bg-purple-500",
+    "bg-orange-500",
+  ];
+  const COLOR_NAMES = ["red", "blue", "yellow", "green", "purple", "orange"];
 
-  // Game state
+  // Game state (No changes needed)
   const [level, setLevel] = useState(1);
   const [moves, setMoves] = useState(0);
   const [gridSize, setGridSize] = useState(4);
@@ -34,9 +42,10 @@ const ChromaticShift = () => {
   const [isComplete, setIsComplete] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showTarget, setShowTarget] = useState(true);
-  const [isModalOpen, setIsModalOpen] = useState(false); // New modal state
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [colors, setColors] = useState(BASE_COLORS.slice(0, 3));
 
-  // Load level on app start
+  // Load level on app start (No changes needed)
   useEffect(() => {
     const loadLevel = async () => {
       const savedLevel = await getLevel();
@@ -50,12 +59,12 @@ const ChromaticShift = () => {
     initializeGame();
   }, [level]);
 
-  // Save level whenever it changes
+  // Save level whenever it changes (No changes needed)
   useEffect(() => {
     storeLevel(level);
   }, [level]);
 
-  // Check if the current grid matches the target
+  // Check if the current grid matches the target (No changes needed)
   useEffect(() => {
     if (grid.length > 0 && targetGrid.length > 0) {
       const matches = grid.every((row, rowIndex) =>
@@ -64,12 +73,12 @@ const ChromaticShift = () => {
 
       if (matches && !isComplete && moves > 0) {
         setIsComplete(true);
-        setIsModalOpen(true); // Open the modal when the level is complete
+        setIsModalOpen(true);
       }
     }
   }, [grid, targetGrid]);
 
-  // --- Capacitor Preferences Functions ---
+  // --- Capacitor Preferences Functions --- (No changes needed)
   const storeLevel = async (value) => {
     try {
       await Preferences.set({
@@ -90,97 +99,76 @@ const ChromaticShift = () => {
     } catch (e) {
       console.error("Error getting level:", e);
     }
-    return 1; // Default to level 1 if no level is found
+    return 1;
   };
   // --- End Capacitor Preferences Functions ---
 
-  // Initialize game with random grid and solvable target
+  // Initialize game with premade levels
   const initializeGame = () => {
-    // Determine grid size based on level
-    const newSize = Math.min(3 + Math.floor(level / 5), 8);
-    setGridSize(newSize);
+    const currentLevelData = levelsData.find((lvl) => lvl.level === level);
 
-    // Create initial grid
-    const newGrid = Array(newSize)
-      .fill()
-      .map(() =>
-        Array(newSize)
-          .fill()
-          .map(() => COLORS[Math.floor(Math.random() * COLORS.length)])
-      );
-
-    setGrid(newGrid);
-
-    // Create target grid by applying random shifts to the initial grid
-    // This ensures the puzzle is solvable
-    const randomShifts = 5 + level;
-    let targetGrid = JSON.parse(JSON.stringify(newGrid));
-
-    for (let i = 0; i < randomShifts; i++) {
-      const isRow = Math.random() > 0.5;
-      const index = Math.floor(Math.random() * newSize);
-
-      if (isRow) {
-        targetGrid = shiftRow(targetGrid, index);
-      } else {
-        targetGrid = shiftColumn(targetGrid, index);
-      }
+    if (currentLevelData) {
+      setGridSize(currentLevelData.gridSize);
+      setColors(currentLevelData.colors);
+      setGrid(currentLevelData.initialGrid);
+      setTargetGrid(currentLevelData.targetGrid);
+      setMoves(0);
+      setIsComplete(false);
+    } else {
+      console.error(`Level data not found for level ${level}`);
+      // Optionally, you could fall back to random generation here if a level is missing.
     }
-
-    setTargetGrid(targetGrid);
-    setMoves(0);
-    setIsComplete(false);
   };
 
-  // Shift colors in a row
-  const shiftRow = (currentGrid, rowIndex) => {
+  // Shift colors in a row (No changes needed)
+  const shiftRow = (currentGrid, rowIndex, currentColors) => {
     const newGrid = JSON.parse(JSON.stringify(currentGrid));
     newGrid[rowIndex] = newGrid[rowIndex].map((color) => {
-      const currentIndex = COLORS.indexOf(color);
-      const nextIndex = (currentIndex + 1) % COLORS.length;
-      return COLORS[nextIndex];
+      const currentIndex = currentColors.indexOf(color);
+      const nextIndex = (currentIndex + 1) % currentColors.length;
+      return currentColors[nextIndex];
     });
     return newGrid;
   };
 
-  // Shift colors in a column
-  const shiftColumn = (currentGrid, colIndex) => {
+  // Shift colors in a column (No changes needed)
+  const shiftColumn = (currentGrid, colIndex, currentColors) => {
     const newGrid = JSON.parse(JSON.stringify(currentGrid));
     for (let row = 0; row < newGrid.length; row++) {
-      const currentIndex = COLORS.indexOf(newGrid[row][colIndex]);
-      const nextIndex = (currentIndex + 1) % COLORS.length;
-      newGrid[row][colIndex] = COLORS[nextIndex];
+      const currentIndex = currentColors.indexOf(newGrid[row][colIndex]);
+      const nextIndex = (currentIndex + 1) % currentColors.length;
+      newGrid[row][colIndex] = currentColors[nextIndex];
     }
     return newGrid;
   };
 
-  // Handle row shift
+  // Handle row shift (No changes needed)
   const handleRowShift = (rowIndex) => {
     if (isComplete) return;
-    setGrid(shiftRow(grid, rowIndex));
+    setGrid(shiftRow(grid, rowIndex, colors));
     setMoves(moves + 1);
   };
 
-  // Handle column shift
+  // Handle column shift (No changes needed)
   const handleColumnShift = (colIndex) => {
     if (isComplete) return;
-    setGrid(shiftColumn(grid, colIndex));
+    setGrid(shiftColumn(grid, colIndex, colors));
     setMoves(moves + 1);
   };
 
-  // Start next level
+  // Start next level (No changes needed)
   const nextLevel = () => {
     setLevel(level + 1);
-    setIsModalOpen(false); // Close the modal when going to the next level
+    setIsModalOpen(false);
   };
 
-  // Reset current level
+  // Reset current level (No changes needed)
   const resetLevel = () => {
     initializeGame();
-    setIsModalOpen(false); // Close the modal when resetting
+    setIsModalOpen(false);
   };
 
-  // Cell size calculation based on grid size
+  // Cell size calculation based on grid size (No changes needed)
   const getCellSize = () => {
     return {
       width: `${64 / gridSize}vw`,
@@ -192,6 +180,7 @@ const ChromaticShift = () => {
 
   const cellSize = getCellSize();
 
+  // Rest of the JSX (No changes needed)
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-4 flex flex-col overflow-y-auto flex-grow flex-shrink">
@@ -222,7 +211,7 @@ const ChromaticShift = () => {
               <li>
                 Click on row or column indicators (arrows) to shift colors
               </li>
-              <li>Colors cycle: Red → Blue → Yellow → Red</li>
+              <li>Colors cycle: Red → Blue → Yellow → Red (and more!)</li>
               <li>Match your grid to the target pattern below</li>
               <li>Complete the level in as few moves as possible</li>
             </ul>
@@ -364,14 +353,16 @@ const ChromaticShift = () => {
       </div>
 
       {/* Color Legend */}
-      {/* <div className="mt-6 flex items-center justify-center space-x-4">
-        {COLORS.map((color, index) => (
+      <div className="mt-6 flex items-center justify-center space-x-4">
+        {colors.map((color, index) => (
           <div key={color} className="flex items-center">
             <div className={`${color} w-4 h-4 rounded mr-1`}></div>
-            <span className="text-sm">{COLOR_NAMES[index]}</span>
+            <span className="text-sm">
+              {COLOR_NAMES[BASE_COLORS.indexOf(color)]}
+            </span>
           </div>
         ))}
-      </div> */}
+      </div>
 
       {/* Level Complete Modal */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>

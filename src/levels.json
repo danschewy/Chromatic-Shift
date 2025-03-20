@@ -1,0 +1,1916 @@
+[
+  {
+    "level": 1,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400"],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-red-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-red-500", "bg-blue-500"],
+      ["bg-yellow-400", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-red-500"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-red-500", "bg-blue-500"],
+      ["bg-yellow-400", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-red-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-red-500", "bg-blue-500"]
+    ]
+  },
+  {
+    "level": 2,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400"],
+    "initialGrid": [
+      ["bg-blue-500", "bg-red-500", "bg-yellow-400", "bg-blue-500"],
+      ["bg-yellow-400", "bg-blue-500", "bg-red-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-yellow-400", "bg-blue-500", "bg-red-500"],
+      ["bg-blue-500", "bg-red-500", "bg-yellow-400", "bg-blue-500"]
+    ],
+    "targetGrid": [
+      ["bg-red-500", "bg-yellow-400", "bg-blue-500", "bg-red-500"],
+      ["bg-blue-500", "bg-red-500", "bg-yellow-400", "bg-blue-500"],
+      ["bg-yellow-400", "bg-blue-500", "bg-red-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-yellow-400", "bg-blue-500", "bg-red-500"]
+    ]
+  },
+  {
+    "level": 3,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400"],
+    "initialGrid": [
+      ["bg-yellow-400", "bg-blue-500", "bg-red-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-yellow-400", "bg-blue-500", "bg-red-500"],
+      ["bg-blue-500", "bg-red-500", "bg-yellow-400", "bg-blue-500"],
+      ["bg-yellow-400", "bg-blue-500", "bg-red-500", "bg-yellow-400"]
+    ],
+    "targetGrid": [
+      ["bg-red-500", "bg-yellow-400", "bg-blue-500", "bg-red-500"],
+      ["bg-blue-500", "bg-red-500", "bg-yellow-400", "bg-blue-500"],
+      ["bg-yellow-400", "bg-blue-500", "bg-red-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-yellow-400", "bg-blue-500", "bg-red-500"]
+    ]
+  },
+  {
+    "level": 4,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ]
+  },
+  {
+    "level": 5,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+    "initialGrid": [
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"]
+    ],
+    "targetGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ]
+  },
+  {
+    "level": 6,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+    "initialGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ],
+    "targetGrid": [
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"]
+    ]
+  },
+  {
+    "level": 7,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ]
+  },
+  {
+    "level": 8,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+    "initialGrid": [
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"]
+    ],
+    "targetGrid": [
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"]
+    ]
+  },
+  {
+    "level": 9,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+    "initialGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ],
+    "targetGrid": [
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"]
+    ]
+  },
+  {
+    "level": 10,
+    "gridSize": 4,
+    "colors": ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-red-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-red-500", "bg-blue-500"],
+      ["bg-green-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ]
+  },
+  {
+    "level": 11,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500"
+    ],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-red-500"],
+      ["bg-green-500", "bg-purple-500", "bg-red-500", "bg-blue-500"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-red-500"],
+      ["bg-green-500", "bg-purple-500", "bg-red-500", "bg-blue-500"],
+      ["bg-purple-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ]
+  },
+  {
+    "level": 12,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500"
+    ],
+    "initialGrid": [
+      ["bg-purple-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-red-500"]
+    ],
+    "targetGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-red-500"],
+      ["bg-green-500", "bg-purple-500", "bg-red-500", "bg-blue-500"]
+    ]
+  },
+  {
+    "level": 13,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500"
+    ],
+    "initialGrid": [
+      ["bg-green-500", "bg-purple-500", "bg-red-500", "bg-blue-500"],
+      ["bg-purple-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"]
+    ],
+    "targetGrid": [
+      ["bg-purple-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-red-500"]
+    ]
+  },
+  {
+    "level": 14,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500"
+    ],
+    "initialGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-red-500"],
+      ["bg-green-500", "bg-purple-500", "bg-red-500", "bg-blue-500"],
+      ["bg-purple-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ],
+    "targetGrid": [
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-red-500"],
+      ["bg-green-500", "bg-purple-500", "bg-red-500", "bg-blue-500"],
+      ["bg-purple-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ]
+  },
+  {
+    "level": 22,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"]
+    ],
+    "targetGrid": [
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"]
+    ]
+  },
+  {
+    "level": 23,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"]
+    ]
+  },
+  {
+    "level": 24,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"]
+    ],
+    "targetGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"]
+    ]
+  },
+  {
+    "level": 25,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ],
+    "targetGrid": [
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"]
+    ]
+  },
+  {
+    "level": 26,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"]
+    ],
+    "targetGrid": [
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ]
+  },
+  {
+    "level": 27,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"]
+    ]
+  },
+  {
+    "level": 28,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"]
+    ],
+    "targetGrid": [
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"]
+    ]
+  },
+  {
+    "level": 29,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ],
+    "targetGrid": [
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"]
+    ]
+  },
+  {
+    "level": 30,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"]
+    ],
+    "targetGrid": [
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ]
+  },
+  {
+    "level": 31,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"]
+    ]
+  },
+  {
+    "level": 32,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"]
+    ],
+    "targetGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"]
+    ]
+  },
+  {
+    "level": 33,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"]
+    ],
+    "targetGrid": [
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"],
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"]
+    ]
+  },
+  {
+    "level": 34,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"]
+    ],
+    "targetGrid": [
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"],
+      ["bg-orange-500", "bg-red-500", "bg-blue-500", "bg-yellow-400"]
+    ]
+  },
+  {
+    "level": 35,
+    "gridSize": 4,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      ["bg-red-500", "bg-blue-500", "bg-yellow-400", "bg-green-500"],
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"]
+    ],
+    "targetGrid": [
+      ["bg-blue-500", "bg-yellow-400", "bg-green-500", "bg-purple-500"],
+      ["bg-yellow-400", "bg-green-500", "bg-purple-500", "bg-orange-500"],
+      ["bg-green-500", "bg-purple-500", "bg-orange-500", "bg-red-500"],
+      ["bg-purple-500", "bg-orange-500", "bg-red-500", "bg-blue-500"]
+    ]
+  },
+  {
+    "level": 36,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ]
+    ]
+  },
+  {
+    "level": 37,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ]
+    ]
+  },
+  {
+    "level": 38,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ]
+    ]
+  },
+  {
+    "level": 39,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ]
+    ]
+  },
+  {
+    "level": 40,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ]
+    ]
+  },
+  {
+    "level": 41,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ]
+    ]
+  },
+  {
+    "level": 42,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ]
+    ]
+  },
+  {
+    "level": 43,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ]
+    ]
+  },
+  {
+    "level": 44,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ]
+    ]
+  },
+  {
+    "level": 45,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ]
+    ]
+  },
+  {
+    "level": 46,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ]
+    ]
+  },
+  {
+    "level": 47,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ]
+    ]
+  },
+  {
+    "level": 48,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ]
+    ]
+  },
+  {
+    "level": 49,
+    "gridSize": 5,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ]
+    ]
+  },
+  {
+    "level": 50,
+    "gridSize": 6,
+    "colors": [
+      "bg-red-500",
+      "bg-blue-500",
+      "bg-yellow-400",
+      "bg-green-500",
+      "bg-purple-500",
+      "bg-orange-500"
+    ],
+    "initialGrid": [
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ],
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ]
+    ],
+    "targetGrid": [
+      [
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500"
+      ],
+      [
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500"
+      ],
+      [
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500"
+      ],
+      [
+        "bg-green-500",
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400"
+      ],
+      [
+        "bg-purple-500",
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500"
+      ],
+      [
+        "bg-orange-500",
+        "bg-red-500",
+        "bg-blue-500",
+        "bg-yellow-400",
+        "bg-green-500",
+        "bg-purple-500"
+      ]
+    ]
+  }
+]
